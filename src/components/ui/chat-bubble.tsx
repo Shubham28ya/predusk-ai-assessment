@@ -69,7 +69,7 @@ export function ChatBubble({ role, content, attachments, onCopy, onDownload, onR
         </div>
         
         {!isUser && !isTyping && (
-          <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity pl-2">
+          <div className="flex items-center gap-1 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity pl-2">
             <button 
               onClick={onCopy}
               className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-secondary/50 hover:bg-secondary text-muted-foreground hover:text-foreground transition-colors shadow-sm border border-border/50"
